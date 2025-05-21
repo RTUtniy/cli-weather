@@ -6,15 +6,9 @@
 
 Domājot par to, kā šo struktūru varētu nosaukt, uzreiz izveidojās asociācija ar tuneli kalnā vai zemes paaugurā, kurā brauc vilciens. Vilcieni parasti vienā līnijā brauc tikai uz vienu pusi, bet tunelī, it īpaši mazā, viņiem var būt redzams gan sākums, gan beigas, bet vidējie vagoni paliks tunelī. Līdzīgi arī strādā šis tunelis. Tunelim ir ierobežots glabājamo objektu skaits (šajā uzdevumā, tas ir 7, kas sakrīt ar nedēļas dienu skaitu), elementi ir vienvirzieni saistīti. Mēģinot pārpildīt struktūru, vecākais elements (tas, kurš tika pievienots agrāk par citiem, šajā gadījumā tas ir struktūras `head` elements) tiek aizstāts ar tam sekojošo elementu (šādā veidā tiek atbrīvota vieta vēl vienam elementam), bet struktūras beigās tiek pievienots jauns elements ─ gluži kā vagoni, kas brauc tunelī. 
 
-```
-pirms | iekš | aiz (tuneļa)
-DBC   | A    |
- CD   | BA   |
-  D   | CB   | A
-      | DC   | BA
-```
+![](./tunnel.png)
 
-Nelielā shematiskajā attēlā virs ir vizualizēts strukrūras darbības princips, kur katrs burts ir struktūras elements. `head` elements vienmēr atrodas pa labi no visiem citiem elementiem šajā struktūras vizuālizācijā.
+Shematiskajā attēlā virs šīs rindkopas ir vizualizēts strukrūras darbības princips, kur katrs burts ir struktūras elements. `head` elements vienmēr atrodas pa labi no visiem citiem elementiem šajā struktūras vizuālizācijā.
 
 ## Programmatūras loģika
 
