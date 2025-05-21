@@ -105,8 +105,7 @@ def main(API_URL: str):
             table.add_row(criteria_names[index], *criteria_data)
             iter_node = weather_store.head
         
-
-    with Live(table, refresh_per_second=60*60) as live:
+    with Live(table, refresh_per_second=1) as live:
         while True:
             update_data()
             time.sleep(60*60)
